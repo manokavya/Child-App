@@ -1,0 +1,19 @@
+input[type=submit]{
+   background-color: Brown;
+   padding:8px;
+   cursor:pointer;
+   border:none;
+   margin:5px;
+   color:white;
+   width: 50%;
+   font-family: Clarendon;
+   font-size:25px;
+   transition: width 2s, height 2s, transform 2s;
+} 
+ input[type=submit]:hover{
+background:green;
+border-radius: 18px;
+ width: 45%;
+ 
+    
+}

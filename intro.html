@@ -1,0 +1,85 @@
+
+<html>
+<head> 
+ <link rel="stylesheet" type="text/css" href="intro.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">  
+<script type="text/javascript">
+    function validate(){
+    x=document.signup.loginpsw.value;
+    y=document.signup.loginrpsw.value;
+    if(x != y){
+    alert("Password does not match");
+    return false;
+}
+}
+</script>
+
+
+
+
+</head>
+<!--sign up--><body>
+<center>
+
+  <div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+          <br><br><br>
+           
+         <font size="+7"><h3 class="modal-title text-center form-title">Sign Up</h3></font>
+        </div>
+        <div class="modal-body padtrbl">
+          <div class="login-box-body">
+          <!-- <b><font size="+5"> <p class="login-box-msg">Create New Account</p></font></b>-->
+            <div class="form-group">
+              <form name="signup" action="signupValidation.php" onsubmit="return validate()"  method="post">
+              <table>
+              
+                <tr>
+                  <td><font size="+3"><b>MommyName:</b></font> </td><td><input type="text" name="signupid" class="form-control"  placeholder="Enter mommy name!.." required></td>
+                </tr> 
+                <tr>
+                  <td><font size="+3"><b>ChildName: </b></font></td><td><input type="text" name="signupid1" class="form-control" placeholder="Enter Child name!.." required></td>
+                </tr>
+                <tr>
+                  <td><font size="+3"><b>Email-ID:</b> </font></td><td>
+                    <input type="email" name="signupmail" placeholder="Enter E-mailId!.." class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$">
+                  </td>
+                </tr>
+                <tr>
+                  <td><font size="+3"><b>PhoneNumber:</b></font></td><td><input type="phone" name="signupnum"  class="form-control"placeholder="Enter mobile number" pattern="[6-9]{1}[0-9]{9}"></td>
+                </tr>
+                <tr>
+                  <td><font size="+3"><b>
+                 Password: </b></font></td><td><input  type="password" name="loginpsw" class="form-control" required></td>
+                  </tr>
+                  <tr>
+                  <td><font size="+3"><b>Confirm Password:</b></font></td><td> <input  type="password" name="loginrpsw" class="form-control" required></td></tr>
+                  
+    
+                
+                <tr>
+                  <td></td>
+                    <td><b><input type="submit" name="submit" value="Submit" class="btn btn-block btn-submit" ></b>
+                  </td>
+                </tr>
+                
+              </table>
+                
+              </form>
+            </div>
+           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </center>
+  </body>
+  <!--/ Modal box-->
+  </html>

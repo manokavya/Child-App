@@ -1,0 +1,35 @@
+input[type=button]{
+   background-color: Brown;
+   padding:8px;
+   cursor:pointer;
+   border:none;
+   margin:5px;
+   color:white;
+   width: 12%;
+   font-family: Clarendon;
+   font-size:25px;
+   transition: width 2s, height 2s, transform 2s;
+} 
+ input[type=button]:hover{
+background: black;
+border-radius: 18px;
+ width: 8%;
+}
+
+input[type=submit]{
+   background-color: Brown;
+   padding:8px;
+   cursor:pointer;
+   border:none;
+   margin:5px;
+   color:white;
+   width: 25%;
+   font-family: Clarendon;
+   font-size:25px;
+   transition: width 2s, height 2s, transform 2s;
+} 
+ input[type=submit]:hover{
+background: black;
+border-radius: 18px;
+ width: 20%;
+}

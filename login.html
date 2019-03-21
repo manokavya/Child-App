@@ -1,0 +1,57 @@
+<html>
+<head> 
+ <link rel="stylesheet" type="text/css" href="intro.css"> 
+ <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style2.css"> 
+ </head>
+
+<body>
+<center>
+
+<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+          <br><br><br>
+
+         <font size="+7"><h3 class="modal-title text-center form-title">Login</h3></font>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <!--<p class="login-box-msg">Sign in to start your session</p>-->
+            <div class="form-group">
+              <form name="" id="loginForm" action="login.php" method="post">
+                <table>
+                  <tr>
+                    <td><font size="+3"><b>Mail-ID: </b></font></td>
+                    <td>
+                      <input type="email" name="loginid" placeholder="Enter EmailID" class="form-control" required>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td><font size="+3"><b>Password: </b></font></td><td>
+                    <input type="password" name="loginpsw" placeholder="Enter Password" class="form-control" required>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td></td><td><b>
+                    <input type="submit" name="submit" value="Submit"  class="btn btn-block btn-submit"></b>
+                  </td>
+                </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </center>
+  </body>
+  </html>
