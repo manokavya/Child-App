@@ -1,0 +1,12 @@
+ .form-control {
+    border-radius: 30px;
+    border: none;
+    background: black;
+    padding-left: 30px;
+    color: #e5e6e7;
+    margin-bottom: 0;
+    height: 48px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
